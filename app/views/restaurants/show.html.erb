@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col justify-content-center">
+      <h2><%= @restaurant.name %></h2>
+      <p><%= @restaurant.phone_number %></p>
+      <p><%= @restaurant.address %></p>
+      <p><%= @restaurant.category %></p>
+      <%= link_to "back to list", restaurants_path, class: "btn bluebutton" %>
+    </div>
+  </div>
+</div>

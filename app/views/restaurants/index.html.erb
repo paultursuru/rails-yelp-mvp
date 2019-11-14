@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col justify-content-center">
+      <div class="mt4">
+        <h2>Full List</h2>
+        <div class="d-flex flex-wrap">
+          <%  @restaurants.each do |r|%>
+            <%= link_to(restaurant_path(r)) do %>
+              <div class="mycard card p-3 m-3">
+                <div class="d-flex justify-content-between">
+                  <h5><%= r.name %></h5>
+                  <p><%= r.category %></p>
+                </div>
+                <p><%= r.address %></p>
+                <p class="pb-2"><%= r.phone_number %></p>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

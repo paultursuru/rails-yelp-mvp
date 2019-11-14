@@ -1,0 +1,46 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+.bellebarre {
+  color: black;
+  background-color: rgba(250, 100, 100, 0.3);
+}
+
+.bluebutton {
+  background-color: rgba(100, 100, 250, 0.3);
+}
+
+.greenbutton {
+  background-color: rgba(100, 250, 100, 0.3);
+}
+
+.more-space-top {
+  margin-top:100px;
+}
+
+.mycard {
+  width: 320px;
+  height: 175px;
+  border-radius: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+a:hover {
+  font-style: italic;
+  text-decoration: none;
+  color: black
+}

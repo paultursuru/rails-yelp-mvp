@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsYelpMvp</title>
+    <title>World Wide Restaurants</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar navbar-default d-flex bellebarre fixed-top">
+      <h4><%= link_to "restaurants", restaurants_path %></h4>
+      <h2>🍕</h2>
+      <h3>World Wide Restaurant Reviews Magazine</h3>
+      <h2>🍜</h2>
+      <h4><%= link_to "new place", new_restaurant_path %></h4>
+    </div>
+    <div class="container more-space-top">
+      <div class="row">
+        <div class="col">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
